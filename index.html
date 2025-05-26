@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kuis Online</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="login">
+    <h2>Login Kuis</h2>
+    <input type="text" id="nama" placeholder="Nama" required>
+    <input type="text" id="kelas" placeholder="Kelas" required>
+    <input type="password" id="password" placeholder="Password" required>
+    <button onclick="login()">Login</button>
+  </div>
+
+  <div id="kuis" style="display:none">
+    <h2>Kuis</h2>
+    <p id="user-info"></p>
+    <p id="timer"></p>
+    <form id="form-kuis"></form>
+    <button onclick="selesai()">Selesai</button>
+  </div>
+
+  <div id="hasil" style="display:none">
+    <h2>Hasil Kuis</h2>
+    <p id="hasil-info"></p>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="sheets.js"></script>
+</body>
+</html>
