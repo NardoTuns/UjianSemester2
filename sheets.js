@@ -1,5 +1,5 @@
 function kirimKeSpreadsheet(nama, kelas, benar) {
-  fetch('https://script.google.com/macros/s/AKfycbx9A8jlywchNF4ZTn1UpVZrSvE86c1P7ucL_QT1P67rWRTZtaXcDCmUuH59tNJf1PeCtg/exec', {
+  fetch('https://script.google.com/macros/s/AKfycbw8lnXRdxIKA0sLhFTHfh_PiBZcfG_ERGB6F8MDARYxmwiJlXI4W4ZhMN0uYP8ApuC7Jg/exec', {
     method: 'POST',
     body: JSON.stringify({ nama, kelas, benar }),
     headers: { 'Content-Type': 'application/json' }
