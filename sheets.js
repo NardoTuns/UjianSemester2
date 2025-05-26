@@ -4,11 +4,11 @@ function kirimKeSpreadsheet(nama, kelas, benar) {
     body: JSON.stringify({ nama, kelas, benar }),
     headers: { 'Content-Type': 'application/json' }
   })
-  .then(response => response.text())
+  .then(res => res.text())
   .then(result => {
-    console.log("Data berhasil dikirim:", result);
+    console.log("Berhasil kirim:", result);
   })
-  .catch(error => {
-    console.error("Terjadi kesalahan:", error);
+  .catch(err => {
+    console.error("Gagal kirim:", err);
   });
 }
